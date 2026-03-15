@@ -139,7 +139,7 @@ public class PyroclasticPhase extends PhaseBase implements Listener {
         FallingBlock fb = launch.getWorld().spawnFallingBlock(launch, mat.createBlockData());
         fb.setVelocity(new Vector(vx, vy, vz));
         fb.setDropItem(false);
-        fb.setHurtEntities(true, 8.0f, 10);
+        fb.setHurtEntities(true);
         fb.setMetadata(TAG, new FixedMetadataValue(plugin, true));
         debris.add(fb);
 

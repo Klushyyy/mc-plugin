@@ -29,7 +29,7 @@ public abstract class PhaseBase {
         onStop();
     }
 
-    protected void cancelTasks() {
+    public void cancelTasks() {
         for (BukkitTask t : tasks) t.cancel();
         tasks.clear();
     }
