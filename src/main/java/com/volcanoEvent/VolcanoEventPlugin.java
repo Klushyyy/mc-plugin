@@ -13,7 +13,6 @@ public class VolcanoEventPlugin extends JavaPlugin implements CommandExecutor {
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
         eventManager = new EventManager(this);
         getServer().getPluginManager().registerEvents(new com.volcanoEvent.managers.PlayerJoinListener(this), this);
         getCommand("volcano").setExecutor(this);
